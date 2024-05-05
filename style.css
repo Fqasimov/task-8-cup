@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: turquoise;
+}
+
+
+.container{
+    position: relative;
+    top: 50px;
+}
+
+.cup{
+    position: relative;
+    width: 300px;
+    height: 220px;
+    background:linear-gradient(to right,#f9f9f9,#d9d9d9);
+margin-top: 60px;
+border-bottom-left-radius: 55%;
+border-bottom-right-radius: 45%;
+
+}
+
+.top{
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background:linear-gradient(to right,#f9f9f9,#d9d9d9);
+    border-radius: 50%;
+}
+
+.circle{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 50px;
+    background:linear-gradient(to left,#f9f9f9,#d9d9d9);
+border-radius: 50%;
+box-sizing: border-box;
+
+}
+.handle{
+    position: absolute;
+    right: -70px;
+    top: 40px;
+    width: 160px;
+    height: 180px;
+    border: 30px solid #dcdcdc;
+    border-left:25px solid transparent ;
+    border-bottom:25px solid transparent ;
+    border-radius: 50%;
+    transform: rotate(53deg);
+}
+
+.smoke{
+    position: absolute;
+top: 55%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 300px;}
+#steam{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+border-radius: 50%;
+margin-left: 75px;
+margin-top: -75px;
+z-index: 0;
+opacity: 0;
+}
+.steam-one{
+    animation: steam-one 2s ease-out infinite;
+}
+
+.steam-three{
+    animation: steam-three 2s ease-out infinite;
+}
+
+@keyframes steam-one {
+    
+    0%
+    
+    {
+    transform: translateY(0) translateX(0) scale(0.25);
+    opacity: 0.25;
+}
+
+100%{
+    transform: translateY(-200px) translateX(-20px) scale(1);
+    opacity: 0;
+
+}
+
+}
+
+
+.steam-two{
+    animation: steam-two 4s ease-out 0.5s infinite;
+}
+
+.steam-four{
+    animation: steam-two 4s ease-out 1.5s infinite;
+}
+
+@keyframes steam-two {
+    
+    0%
+    
+    {
+    transform: translateY(0) translateX(0) scale(0.25);
+    opacity: 0.25;
+}
+
+100%{
+    transform: translateY(-200px) translateX(20px) scale(1);
+    opacity: 0;
+
+}
+
+}
+
+  
